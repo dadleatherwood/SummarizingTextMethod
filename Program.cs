@@ -1,12 +1,14 @@
 ﻿using System;
-
+using System.Collections.Generic;
 namespace SummarizingTextMethod
 {
     class MainClass
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var sentence = "This is going to be a really really really really long sentence.";
+            var summary = StringUtility.SummarizeText(sentence);
+            Console.WriteLine(summary);
         }
     }
 }
